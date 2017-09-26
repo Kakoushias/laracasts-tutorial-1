@@ -11,7 +11,7 @@ return [
 
 		'password' => 'secret',
 
-		'connection' => 'mysql:host=192.168.10.1',
+		'connection' => 'mysql:host=192.168.10.10',
 
 		'options' => [
 
