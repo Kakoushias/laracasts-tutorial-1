@@ -3,7 +3,7 @@
 $database = require 'core/bootstrap.php';
 
 $router = Router::load('routes.php')
-    ->direct(Request::uri());
+    ->direct(Request::uri(), Request::method());
 
 if ($router) {
     require $router;

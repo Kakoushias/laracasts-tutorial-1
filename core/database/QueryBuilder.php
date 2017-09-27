@@ -23,7 +23,7 @@ class QueryBuilder
 	public function selectAll($table)
 	{
 
-		$statement = $this->$pdo->prepare(
+		$statement = $this->pdo->prepare(
 			"select * from {$table}"
 			);
 

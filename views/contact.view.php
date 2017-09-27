@@ -1,7 +1,7 @@
-<?php require('head.php'); ?>
+<?php require('partials/head.php'); ?>
 
 
 	<h1>Contact Us</h1>
 
 
-<?php require('footer.php'); ?>
+<?php require('partials/footer.php'); ?>
