@@ -1,12 +1,15 @@
 <?php
 
-$database = require 'core/bootstrap.php';
+require 'vendor/autoload.php';
 
-$router = Router::load('routes.php')
+require 'core/bootstrap.php';
+
+use App\Core\{Router, Request};
+
+
+Router::load('app/routes.php')
     ->direct(Request::uri(), Request::method());
 
-if ($router) {
-    require $router;
-}
+
 
 
